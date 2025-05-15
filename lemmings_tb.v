@@ -103,10 +103,5 @@ module top_module_tb;
         $finish;
     end
     
-    // Monitor outputs
-    initial begin
-        $monitor("Time=%0t areset=%b ground=%b dig=%b bump_left=%b bump_right=%b state=%b walk_left=%b walk_right=%b aaah=%b digging=%b",
-                 $time, areset, ground, dig, bump_left, bump_right, uut.state, walk_left, walk_right, aaah, digging);
-    end
     
 endmodule
